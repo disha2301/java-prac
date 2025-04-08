@@ -1,29 +1,22 @@
-/*Create a program to check if a number taken from the user is a Harshad Number.
-Hint => 
-A Harshad number is an integer which is divisible by the sum of its digits. 
-For example, 21 which is perfectly divided by 3 (sum of digits: 2 + 1).
-Get an integer input for the number variable.
-Create an integer variable sum with initial value 0.
-Create a while loop to access each digit of the number.
-Inside the loop, add each digit of the number to sum.
-Check if the number is perfectly divisible by the sum.
-If the number is divisible by the sum, print Harshad Number. Otherwise, print Not a Harshad Number.
- */
 import java.util.*;
-class HarshadNumber {
+
+class HarshadNumber { 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        int temp = num;
-        int sum = 0;
 
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();  // Input number from user
+
+        int temp = num;          // Store original number for final check
+        int sum = 0;             // Sum of digits
+
+        // Loop to calculate the sum of digits
         while (num > 0) {
-            sum += num % 10;
-            num /= 10;
+            sum += num % 10;     // Add last digit
+            num /= 10;           // Remove last digit
         }
 
+        // Check if original number is divisible by sum of its digits
         if (temp % sum == 0) {
             System.out.println(temp + " is a Harshad Number.");
         } else {

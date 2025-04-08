@@ -1,19 +1,24 @@
-/*Create a program to find the BMI of a person
-Hint => 
-Take user input in double for the weight (in kg) of the person and height (in cm) for the person and store it in the corresponding variable.
-Use the formula BMI = weight / (height * height). Note unit is kg/m^2. For this convert cm to meter
-Use the table to determine the weight status of the person
- */
 import java.util.*;
-class BMI{
+
+class BMICalculator {  
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
+
+        // Get weight in kilograms
         System.out.print("Enter weight in kg: ");
         double weight = sc.nextDouble();
+
+        // Get height in centimeters
         System.out.print("Enter height in cm: ");
         double heightCm = sc.nextDouble();
+
+        // Convert height to meters
         double heightM = heightCm / 100;
+
+        // Calculate BMI using formula: weight / (height in meters)^2
         double bmi = weight / (heightM * heightM);
+
+        // Determine weight status based on BMI value
         String status;
         if (bmi <= 18.4) {
             status = "Underweight";
@@ -24,7 +29,9 @@ class BMI{
         } else {
             status = "Obese";
         }
+
+        // Display BMI and weight status
         System.out.println("Your BMI: " + String.format("%.2f", bmi));
         System.out.println("Weight Status: " + status);
     }
-} 
+}
