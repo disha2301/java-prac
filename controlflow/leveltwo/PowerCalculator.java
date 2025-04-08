@@ -1,9 +1,8 @@
 import java.util.*;
 
-class PowerCalc {
+class PowerCalculator {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter number:");
         int num = sc.nextInt();
 
@@ -13,11 +12,12 @@ class PowerCalc {
         if (pow < 0) {
             System.out.println("Please enter a positive number as power.");
         } else {
-            int res = 1;
+            int res = 1, i = 1;
 
-            // Loop to calculate power
-            for (int i = 1; i <= pow; i++) {
+            // Calculate power using while loop
+            while (i <= pow) {
                 res *= num;
+                i++;
             }
 
             System.out.println(num + " raised to the power " + pow + " is: " + res);
