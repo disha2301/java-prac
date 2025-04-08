@@ -1,28 +1,31 @@
-/*Rewrite the above program to store the marks of the students in physics, chemistry, and maths in a 2D array and then compute the percentage and grade
-Hint => 
-All the steps are the same as the problem 8 except the marks are stored in a 2D array
-Use the 2D array to calculate the percentages, and grades of the students
- */
 import java.util.*;
-class Grade2{
-    public static void main(String args[]){
+
+class GradeCalc {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of students: ");
         int n = sc.nextInt();
 
-        int[][] marks = new int[n][3];
+        int[][] marks = new int[n][3]; // [student][0:Physics, 1:Chemistry, 2:Maths]
         double[] per = new double[n];
         String[] grade = new String[n];
         String[] remarks = new String[n];
 
         for (int i = 0; i < n; i++) {
             System.out.println("Enter marks for Student " + (i + 1));
+
             System.out.print("Physics: ");
             marks[i][0] = sc.nextInt();
             System.out.print("Chemistry: ");
             marks[i][1] = sc.nextInt();
             System.out.print("Maths: ");
             marks[i][2] = sc.nextInt();
+
+            if (marks[i][0] < 0 || marks[i][1] < 0 || marks[i][2] < 0) {
+                System.out.println("Invalid marks! Please enter non-negative values.");
+                i--; // repeat for the same student
+                continue;
+            }
 
             per[i] = (marks[i][0] + marks[i][1] + marks[i][2]) / 3.0;
 
@@ -46,8 +49,12 @@ class Grade2{
                 remarks[i] = "Remedial standards";
             }
         }
+
+        System.out.println("\n--- Results ---");
         for (int i = 0; i < n; i++) {
-            System.out.println("Student " + (i + 1) + " - Percentage: " + per[i] + "%, Grade: " + grade[i] + ", Remarks: " + remarks[i]);
+            System.out.println("Student " + (i + 1) +
+                " - Percentage: " + per[i] + "%, Grade: " + grade[i] +
+                ", Remarks: " + remarks[i]);
         }
     }
 }
