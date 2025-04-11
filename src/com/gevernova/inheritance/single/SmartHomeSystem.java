@@ -29,7 +29,7 @@ class Thermostat extends Device {
     @Override
     void displayStatus() {
         super.displayStatus();
-        System.out.println("Temperature Setting: " + temperatureSetting + "°C");
+        System.out.println("Temperature Setting are at: " + temperatureSetting + "°C");
     }
 }
 // main method to demonstrate inheritance

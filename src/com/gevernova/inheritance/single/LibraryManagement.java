@@ -42,7 +42,7 @@ public class LibraryManagement {
                 "The Art of Java",
                 2022,
                 "Disha Yadav",
-                "Disha is a software engineer passionate about clean code and teaching Java."
+                "Disha is a software engineer passionate about clean code and teaching Java, C and C++."
         );
 
         // Display book and author info
