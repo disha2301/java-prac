@@ -101,7 +101,6 @@ class MiniTruck extends RentalTransport implements InsurancePolicy {
     }
 }
 
-// Main application
 public class VehicleRentalApp {
     public static void main(String[] args) {
         RentalTransport[] vehicles = {
