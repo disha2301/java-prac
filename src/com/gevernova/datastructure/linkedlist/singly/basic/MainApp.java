@@ -1,4 +1,4 @@
-package com.gevernova.datastructure.linkedlist.singly;
+package com.gevernova.datastructure.linkedlist.singly.basic;
 
 import java.util.LinkedList;
 import java.util.Queue;
