@@ -24,6 +24,6 @@ public class TicketReservationSystem {
         system.displayTickets();
 
         // Try removing a non-existing ticket
-        system.removeTicket(999);
+        system.removeTicket(    999);
     }
 }
