@@ -1,4 +1,4 @@
-package com.gevernova.collection.list.nthelement;
+package com.gevernova.collection.listinterface.nthelement;
 import java.util.LinkedList;
 import java.util.Iterator;
 import java.util.List;

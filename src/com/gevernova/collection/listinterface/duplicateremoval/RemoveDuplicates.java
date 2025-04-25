@@ -1,4 +1,4 @@
-package com.gevernova.collection.list.duplicateremoval;
+package com.gevernova.collection.listinterface.duplicateremoval;
 
 import java.util.*;
 

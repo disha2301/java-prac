@@ -1,4 +1,4 @@
-package com.gevernova.collection.list.frequency;
+package com.gevernova.collection.listinterface.frequency;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

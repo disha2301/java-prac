@@ -1,4 +1,4 @@
-package com.gevernova.collection.list.rotation;
+package com.gevernova.collection.listinterface.rotation;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

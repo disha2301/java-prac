@@ -1,4 +1,4 @@
-package com.gevernova.collection.list.listreverse;
+package com.gevernova.collection.listinterface.listreverse;
 import java.util.List;
 import java.util.ArrayList;
 
