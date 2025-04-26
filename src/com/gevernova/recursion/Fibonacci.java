@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Fibonacci {
 
-    public static int fibonacci(int n) {
-        if (n == 0) {
+    public static int fibonacci(int num) {
+        if (num == 0) {
             return 0; // Base case
-        } else if (n == 1) {
+        } else if (num == 1) {
             return 1; // Base case
         }
-        return fibonacci(n - 1) + fibonacci(n - 2); // Recursive case
+        return fibonacci(num - 1) + fibonacci(num - 2); // Recursive case
     }
 
     public static void main(String[] args) {

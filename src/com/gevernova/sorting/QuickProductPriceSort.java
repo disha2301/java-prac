@@ -42,18 +42,18 @@ public class QuickProductPriceSort {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter number of products : ");
-        int n = scanner.nextInt();
-        int[] price = new int[n];
+        int num = scanner.nextInt();
+        int[] price = new int[num];
 
         System.out.println("Enter the prices : ");
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < num; i++){
             price[i] = scanner.nextInt();
         }
 
         // calling quick sort method
-        quicksort(price,0,n-1);
+        quicksort(price,0,num-1);
         System.out.println("Sorted product prices : ");
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < num; i++){
             System.out.print(price[i]+" ");
         }
     }

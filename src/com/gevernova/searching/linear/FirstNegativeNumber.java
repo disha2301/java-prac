@@ -17,10 +17,10 @@ public class FirstNegativeNumber {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of elements : ");
-        int n = scanner.nextInt();
-        int[] arr = new int[n];
+        int num = scanner.nextInt();
+        int[] arr = new int[num];
         System.out.println("Enter values");
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < num; i++){
             arr[i] = scanner.nextInt();
         }
 

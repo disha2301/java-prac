@@ -31,10 +31,10 @@ public class PeakElement {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of elements");
-        int n = scanner.nextInt();
-        int[] arr = new int[n];
+        int num = scanner.nextInt();
+        int[] arr = new int[num];
         System.out.println("Start entering the input in the required fields : ");
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < num; i++){
             System.out.print("At index "+i+": ");
             arr[i] = scanner.nextInt();
         }

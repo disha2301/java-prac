@@ -2,11 +2,11 @@ package com.gevernova.recursion;
 
 public class FactorialCalculator {
 
-    public static long factorial(int n) {
-        if (n == 0 || n == 1) {
+    public static long factorial(int num) {
+        if (num == 0 || num == 1) {
             return 1; // Base case
         }
-        return n * factorial(n - 1); // Recursive case
+        return num * factorial(num - 1); // Recursive case
     }
 
     public static void main(String[] args) {

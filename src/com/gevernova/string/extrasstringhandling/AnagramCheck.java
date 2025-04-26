@@ -1,7 +1,7 @@
 package com.gevernova.string.extrasstringhandling;
 import java.util.*;
 class AnagramCheck{
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first string : ");
         String strOne = scanner.nextLine();

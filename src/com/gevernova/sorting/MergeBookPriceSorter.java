@@ -1,87 +1,89 @@
 package com.gevernova.sorting;
+
 import java.util.Scanner;
 
 public class MergeBookPriceSorter {
 
-    // recursive method to divide and sort
-    public static void mergesort(int[] price, int left, int right){
-        if(left < right){
-            int mid = left + (right - left) / 2;
+    // Recursive method to divide and sort
+    public static void mergeSort(int[] prices, int leftIndex, int rightIndex) {
+        if (leftIndex < rightIndex) {
+            int middleIndex = leftIndex + (rightIndex - leftIndex) / 2;
 
-            // sort first and second halves
-            mergesort(price, left, mid);
-            mergesort(price, mid + 1, right);
+            // Sort first and second halves
+            mergeSort(prices, leftIndex, middleIndex);
+            mergeSort(prices, middleIndex + 1, rightIndex);
 
-            // merge the sorted halves
-            merge(price, left, mid, right);
+            // Merge the sorted halves
+            merge(prices, leftIndex, middleIndex, rightIndex);
         }
     }
-    // method to merge two sorted parts
-    public static void merge(int[] price, int left, int mid, int right){
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
 
-        // creating temporary arrays
-        int[] l = new int[n1];
-        int[] r = new int[n2];
+    // Method to merge two sorted parts
+    public static void merge(int[] prices, int leftIndex, int middleIndex, int rightIndex) {
+        int sizeLeft = middleIndex - leftIndex + 1;
+        int sizeRight = rightIndex - middleIndex;
 
-        //copy data to temp arrays
-        for(int i = 0; i < n1; i++)
-            l[i] = price[left + i];
-        for(int j = 0; j < n2; j++)
-            r[j] = price[mid + 1 + j];
+        // Create temporary arrays
+        int[] leftArray = new int[sizeLeft];
+        int[] rightArray = new int[sizeRight];
 
-        // merge the temp arrays back into price[]
+        // Copy data to temp arrays
+        for (int i = 0; i < sizeLeft; i++)
+            leftArray[i] = prices[leftIndex + i];
+        for (int j = 0; j < sizeRight; j++)
+            rightArray[j] = prices[middleIndex + 1 + j];
+
+        // Merge the temp arrays back into prices[]
         int i = 0, j = 0;
-        int k = left;
+        int k = leftIndex;
 
-        while(i < n1 && j < n2){
-            if(l[i] <= r[j]){
-                price[k] = l[i];
+        while (i < sizeLeft && j < sizeRight) {
+            if (leftArray[i] <= rightArray[j]) {
+                prices[k] = leftArray[i];
                 i++;
-            }
-            else{
-                price[k] = r[j];
+            } else {
+                prices[k] = rightArray[j];
                 j++;
             }
             k++;
         }
 
-        // copy remaining elements if any
-        while( i < n1){
-            price[k] = l[i];
+        // Copy remaining elements of leftArray if any
+        while (i < sizeLeft) {
+            prices[k] = leftArray[i];
             i++;
             k++;
         }
-        while(j < n2){
-            price[k] = r[j];
+
+        // Copy remaining elements of rightArray if any
+        while (j < sizeRight) {
+            prices[k] = rightArray[j];
             j++;
             k++;
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // take user input for number of book prices
-        System.out.print("Enter number of books : ");
-        int n = scanner.nextInt();
-        int[] price = new int[n];
+        // Take user input for number of book prices
+        System.out.print("Enter number of books: ");
+        int numberOfBooks = scanner.nextInt();
+        int[] bookPrices = new int[numberOfBooks];
 
-        // input prices from user
-        System.out.println("Enter the prices of the books : ");
-        for(int i = 0;i < n;i++){
-            price[i] = scanner.nextInt();
+        // Input prices from user
+        System.out.println("Enter the prices of the books:");
+        for (int i = 0; i < numberOfBooks; i++) {
+            bookPrices[i] = scanner.nextInt();
         }
 
-        // call mergesort function
-        mergesort(price,0,n-1);
+        // Call mergeSort function
+        mergeSort(bookPrices, 0, numberOfBooks - 1);
 
-        // display sorted prices
-        System.out.println("Sorted book prices");
-        for(int i = 0; i < n; i++){
-            System.out.print(price[i] + " ");
+        // Display sorted prices
+        System.out.println("Sorted book prices:");
+        for (int price : bookPrices) {
+            System.out.print(price + " ");
         }
     }
-
 }

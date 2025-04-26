@@ -19,11 +19,11 @@ public class WordSearch {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter no. of sentences : ");
-        int n = scanner.nextInt();
-        String[] sentences = new String[n];
+        int num = scanner.nextInt();
+        String[] sentences = new String[num];
         // Input all sentences
         System.out.println("Enter the sentences:");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < num; i++) {
             sentences[i] = scanner.nextLine();
         }
         // Input the word to search

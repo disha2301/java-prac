@@ -6,10 +6,10 @@ class CircleAreaCalculator {
 
         // Prompt the user to enter the radius
         System.out.print("Enter Radius: ");
-        double r = scanner.nextDouble();
+        double radius = scanner.nextDouble();
 
         // Calculate the area using Math.PI for precision
-        double area = Math.PI * r * r;
+        double area = Math.PI * radius * radius;
 
         // Display the result
         System.out.println("Area of the circle is " + area + " square units");

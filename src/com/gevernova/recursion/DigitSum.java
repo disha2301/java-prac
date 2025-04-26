@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class DigitSum {
 
-    public static int sumOfDigits(int n) {
-        if (n == 0) {
+    public static int sumOfDigits(int num) {
+        if (num == 0) {
             return 0;
         }
-        return (n % 10) + sumOfDigits(n / 10);
+        return (num % 10) + sumOfDigits(num / 10);
     }
 
     public static void main(String[] args) {

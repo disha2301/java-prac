@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class PowerCalculator {
 
-    public static long power(int a, int b) {
-        if (b == 0) {
+    public static long power(int num, int power) {
+        if (power == 0) {
             return 1; // Base case: any number to the power 0 is 1
         }
-        return a * power(a, b - 1); // Recursive case
+        return num * power(num, power - 1); // Recursive case
     }
 
     public static void main(String[] args) {

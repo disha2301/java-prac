@@ -5,7 +5,7 @@ class VowelConsonant {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
         String str = scanner.nextLine();
-        int v = 0, c = 0;
+        int vowel = 0, cons = 0;
         str = str.toLowerCase();
 
         for (int i = 0; i < str.length(); i++) {
@@ -13,14 +13,14 @@ class VowelConsonant {
 
             if (ch >= 'a' && ch <= 'z') { 
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-                    v++;
+                    vowel++;
                 } else {
-                    c++;
+                    cons++;
                 }
             }
         }
 
-        System.out.println("Vowels: " + v);
-        System.out.println("Consonants: " + c);
+        System.out.println("Vowels: " + vowel);
+        System.out.println("Consonants: " + cons);
     }
 }

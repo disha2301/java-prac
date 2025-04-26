@@ -9,10 +9,10 @@ class LongestWordPresent {
         String word = "", longest = "";
         
         for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+            char character = str.charAt(i);
 
-            if (ch != ' ') {
-                word += ch;
+            if (character != ' ') {
+                word += character;
             } else {
                 if (word.length() > longest.length()) {
                     longest = word;
