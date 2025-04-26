@@ -8,11 +8,11 @@ public class SimpleMapInversion {
         Map<String, String> originalMap = new HashMap<>();
 
         System.out.print("How many entries? ");
-        int n = scanner.nextInt();
+        int num = scanner.nextInt();
         scanner.nextLine(); // clear newline
 
         // Taking input for the original map
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < num; i++) {
             System.out.print("Enter key: ");
             String key = scanner.nextLine();
 

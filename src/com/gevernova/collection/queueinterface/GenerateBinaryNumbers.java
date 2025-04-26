@@ -29,10 +29,10 @@ public class GenerateBinaryNumbers {
 
         // Ask user for the number of binary numbers to generate
         System.out.println("Enter the number of binary numbers to generate: ");
-        int n = scanner.nextInt();
+        int num = scanner.nextInt();
 
         // Call the method to generate and print the binary numbers
-        generateBinary(n);
+        generateBinary(num);
 
     }
 }

@@ -9,11 +9,11 @@ public class MaxValueKeyFinder {
         Map<String, Integer> map = new HashMap<>();
 
         System.out.print("How many entries? ");
-        int n = scanner.nextInt();
+        int num = scanner.nextInt();
         scanner.nextLine(); // consume newline
 
         // Input key-value pairs
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < num; i++) {
             System.out.print("Enter key: ");
             String key = scanner.nextLine();
             System.out.print("Enter value: ");

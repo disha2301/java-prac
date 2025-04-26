@@ -7,44 +7,44 @@ import java.util.Scanner;
 public class MergeMaps {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Map<String, Integer> map1 = new HashMap<>();
-        Map<String, Integer> map2 = new HashMap<>();
+        Map<String, Integer> mapOne = new HashMap<>();
+        Map<String, Integer> mapTwo = new HashMap<>();
 
         System.out.print("How many entries in Map1? ");
-        int n1 = scanner.nextInt();
+        int numOne = scanner.nextInt();
         scanner.nextLine();
 
-        for (int i = 0; i < n1; i++) {
+        for (int i = 0; i < numOne; i++) {
             System.out.print("Enter key for Map1: ");
             String key = scanner.nextLine();
             System.out.print("Enter value: ");
             int value = scanner.nextInt();
             scanner.nextLine();
-            map1.put(key, value);
+            mapOne.put(key, value);
         }
 
         System.out.print("How many entries in Map2? ");
-        int n2 = scanner.nextInt();
+        int numTwo = scanner.nextInt();
         scanner.nextLine();
 
-        for (int i = 0; i < n2; i++) {
+        for (int i = 0; i < numTwo; i++) {
             System.out.print("Enter key for Map2: ");
             String key = scanner.nextLine();
             System.out.print("Enter value: ");
             int value = scanner.nextInt();
             scanner.nextLine();
-            map2.put(key, value);
+            mapTwo.put(key, value);
         }
 
         // Merging map2 into map1
-        for (String key : map2.keySet()) {
-            if (map1.containsKey(key)) {
-                map1.put(key, map1.get(key) + map2.get(key));
+        for (String key : mapTwo.keySet()) {
+            if (mapOne.containsKey(key)) {
+                mapOne.put(key, mapOne.get(key) + mapTwo.get(key));
             } else {
-                map1.put(key, map2.get(key));
+                mapOne.put(key, mapTwo.get(key));
             }
         }
 
-        System.out.println("\nMerged Map: " + map1);
+        System.out.println("\nMerged Map: " + mapOne);
     }
 }
