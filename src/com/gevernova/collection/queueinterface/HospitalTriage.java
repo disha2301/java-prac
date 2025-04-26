@@ -27,19 +27,19 @@ class Patient implements Comparable<Patient> {
 
 public class HospitalTriage {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         PriorityQueue<Patient> pq = new PriorityQueue<>();
         System.out.println("Enter number of patients: ");
-        int n = sc.nextInt();
-        sc.nextLine();  // Consume the newline character
+        int n = scanner.nextInt();
+        scanner.nextLine();  // Consume the newline character
 
         // input details of the patients
         for (int i = 0; i < n; i++) {
             System.out.println("Enter patient's name: ");
-            String name = sc.nextLine();
+            String name = scanner.nextLine();
             System.out.println("Enter the severity of the patient on a scale of 1-10: ");
-            int severity = sc.nextInt();
-            sc.nextLine();  // Consume the newline character
+            int severity = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
 
             // add patients to the priority queue
             pq.add(new Patient(name, severity));

@@ -25,11 +25,11 @@ public class GenerateBinaryNumbers {
 
     public static void main(String[] args){
         // Create scanner object to read user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Ask user for the number of binary numbers to generate
         System.out.println("Enter the number of binary numbers to generate: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Call the method to generate and print the binary numbers
         generateBinary(n);

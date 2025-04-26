@@ -25,19 +25,19 @@ public class ReverseQueue {
 
     public static void main(String[] args) {
         // Create a Scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Initialize the queue
         Queue<Integer> queue = new LinkedList<>();
 
         // Prompt the user to enter the number of elements in the queue
         System.out.println("Enter the number of elements in the queue : ");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         // Ask the user to enter the elements of the queue
         System.out.println("Enter elements in the queue");
         for (int i = 0; i < size; i++) {
-            queue.add(sc.nextInt());  // Add each element to the queue
+            queue.add(scanner.nextInt());  // Add each element to the queue
         }
 
         // Print the original queue

@@ -40,20 +40,20 @@ public class CircularBuffer {
 
     // Main method to take input from user
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter buffer size: ");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         CircularBuffer cb = new CircularBuffer(size);
 
         while (true) {
             System.out.println("\n1. Insert\n2. Display\n3. Exit");
             System.out.print("Choose an option: ");
-            int choice = sc.nextInt();
+            int choice = scanner.nextInt();
 
             if (choice == 1) {
                 System.out.print("Enter number to insert: ");
-                int num = sc.nextInt();
+                int num = scanner.nextInt();
                 cb.insert(num);
             } else if (choice == 2) {
                 cb.display();
