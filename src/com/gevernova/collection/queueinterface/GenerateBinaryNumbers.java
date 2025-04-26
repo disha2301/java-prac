@@ -1,0 +1,38 @@
+package com.gevernova.collection.queueinterface;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class GenerateBinaryNumbers {
+
+    // Method to generate the first 'n' binary numbers using a queue
+    public static void generateBinary(int n){
+        Queue<String> q = new LinkedList<>();
+        q.add("1"); // Add the first binary number "1"
+
+        // Loop to generate and print binary numbers
+        for(int i  = 0; i < n; i++){
+            // Dequeue the front element
+            String current = q.poll();
+            System.out.print(current + " "); // Print the current binary number
+
+            // Generate the next two binary numbers by appending "0" and "1"
+            q.add(current + "0");
+            q.add(current + "1");
+        }
+    }
+
+    public static void main(String[] args){
+        // Create scanner object to read user input
+        Scanner sc = new Scanner(System.in);
+
+        // Ask user for the number of binary numbers to generate
+        System.out.println("Enter the number of binary numbers to generate: ");
+        int n = sc.nextInt();
+
+        // Call the method to generate and print the binary numbers
+        generateBinary(n);
+
+    }
+}
