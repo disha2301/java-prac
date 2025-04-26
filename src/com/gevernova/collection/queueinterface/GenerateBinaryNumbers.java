@@ -8,18 +8,18 @@ public class GenerateBinaryNumbers {
 
     // Method to generate the first 'n' binary numbers using a queue
     public static void generateBinary(int n){
-        Queue<String> q = new LinkedList<>();
-        q.add("1"); // Add the first binary number "1"
+        Queue<String> queue = new LinkedList<>();
+        queue.add("1"); // Add the first binary number "1"
 
         // Loop to generate and print binary numbers
         for(int i  = 0; i < n; i++){
             // Dequeue the front element
-            String current = q.poll();
+            String current = queue.poll();
             System.out.print(current + " "); // Print the current binary number
 
             // Generate the next two binary numbers by appending "0" and "1"
-            q.add(current + "0");
-            q.add(current + "1");
+            queue.add(current + "0");
+            queue.add(current + "1");
         }
     }
 
