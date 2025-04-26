@@ -4,10 +4,10 @@ class AgeToVote{
         public static void main(String args[]) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the number of students:");
-            int n = scanner.nextInt();
+            int num = scanner.nextInt();
             
-            int[] ages = new int[n];
-            for (int i = 0; i < n; i++) {
+            int[] ages = new int[num];
+            for (int i = 0; i < num; i++) {
                 System.out.println("Enter age of student " + (i + 1) + ":");
                 ages[i] = scanner.nextInt();
             }

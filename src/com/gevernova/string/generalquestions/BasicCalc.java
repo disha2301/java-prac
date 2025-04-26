@@ -1,30 +1,31 @@
 package com.gevernova.string.generalquestions;
 
 import java.util.Scanner;
+
 class BasicCalc {
 
     // Addition
-    public static double add(double a, double b) {
-        return a + b;
+    public static double add(double num1, double num2) {
+        return num1 + num2;
     }
 
     // Subtraction
-    public static double subtract(double a, double b) {
-        return a - b;
+    public static double subtract(double num1, double num2) {
+        return num1 - num2;
     }
 
     // Multiplication
-    public static double multiply(double a, double b) {
-        return a * b;
+    public static double multiply(double num1, double num2) {
+        return num1 * num2;
     }
 
     // Division
-    public static double divide(double a, double b) {
-        if (b == 0) {
+    public static double divide(double num1, double num2) {
+        if (num2 == 0) {
             System.out.println("Cannot divide by zero!");
             return 0;
         }
-        return a / b;
+        return num1 / num2;
     }
 
     public static void main(String args[]) {

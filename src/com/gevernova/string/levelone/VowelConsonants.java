@@ -4,8 +4,8 @@ class VowelConsonants{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String s = scanner.nextLine();
-        int count[] = myCount(s);
+        String string = scanner.nextLine();
+        int count[] = myCount(string);
         System.out.println("The given string has "+count[0]+" vowels");
         System.out.println("The given string has "+count[1]+" consonants");
     }
@@ -25,14 +25,14 @@ class VowelConsonants{
         return "Not a letter";
     }
     public static int[] myCount(String str){
-        int v=0;
-        int c=0;
+        int vowel=0;
+        int count=0;
         for(int i=0;i<=str.length()-1;i++){
             char ch = str.charAt(i);
             String type = checkCase(ch);
-            if(type.equals("Vowel")) v++;
-            else if(type.equals("Consonant")) c++;
+            if(type.equals("Vowel")) vowel++;
+            else if(type.equals("Consonant")) count++;
         }
-        return new int[]{v,c};
+        return new int[]{vowel,count};
     }
 }

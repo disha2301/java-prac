@@ -4,11 +4,11 @@ class GcdLcm{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first number");
-        int num1 = scanner.nextInt();
+        int numOne = scanner.nextInt();
         System.out.println("Enter second number");
-        int num2 = scanner.nextInt();
-        int gcd = gcdCalc(num1,num2);
-        int lcm = lcmCalc(num1,num2,gcd);
+        int numTwo = scanner.nextInt();
+        int gcd = gcdCalc(numOne,numTwo);
+        int lcm = lcmCalc(numOne,numTwo,gcd);
         System.out.println("GCD is "+gcd);
         System.out.println("LCM is "+lcm);
     }

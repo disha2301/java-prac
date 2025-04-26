@@ -4,22 +4,22 @@ class Length{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String s = scanner.next();
-        int len1 = lengthCalc(s);
-        int len2 = s.length();
+        String string = scanner.next();
+        int len1 = lengthCalc(string);
+        int len2 = string.length();
         System.out.print("Lenght calculated without inbuilt method : "+len1+"\n");
         System.out.print("Length calculated with inbuilt method : "+len2);
     }
     static int lengthCalc(String s){
-        int c=0;
+        int count=0;
         try{
             while(true){
-                s.charAt(c);
-                c++;
+                s.charAt(count);
+                count++;
             }
         }
         catch(IndexOutOfBoundsException e){
-            return c;
+            return count;
         }
     }
 }

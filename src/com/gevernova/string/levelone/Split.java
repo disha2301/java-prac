@@ -4,24 +4,24 @@ class Split{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any sentence");
-        String s = scanner.nextLine();
-        String s1[]=mySplit(s);
-        String s2[]=s.split(" ");
-        boolean compare = isSame(s1,s2);
-        System.out.println("Words without using inbuilt method "+Arrays.toString(s1));
-        System.out.println("Words using inbuilt method "+Arrays.toString(s2));
+        String string = scanner.nextLine();
+        String stringOne[]=mySplit(string);
+        String stringTwo[]=string.split(" ");
+        boolean compare = isSame(stringOne,stringTwo);
+        System.out.println("Words without using inbuilt method "+Arrays.toString(stringOne));
+        System.out.println("Words using inbuilt method "+Arrays.toString(stringTwo));
         System.out.println("Comparision results :"+compare);
     }
     public static int findLength(String s){
-        int c=0;
+        int count=0;
         try{
             while(true){
-                s.charAt(c);
-                c++;
+                s.charAt(count);
+                count++;
             }
         }
         catch(IndexOutOfBoundsException e){
-            return c;
+            return count;
         }
     }
     public static String[] mySplit(String s){

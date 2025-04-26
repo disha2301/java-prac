@@ -5,11 +5,11 @@ public class TrimCheck {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
         String str = scanner.nextLine();
-        String str1 = myTrim(str);
-        String str2 = str.trim();
-        System.out.println("Trimmed without built-in function is "+str1);
-        System.out.println("Trimmed with built-in function is "+str2);
-        System.out.println("is the result same ? : "+ str1.equals(str2));
+        String strOne = myTrim(str);
+        String strTwo = str.trim();
+        System.out.println("Trimmed without built-in function is "+strOne);
+        System.out.println("Trimmed with built-in function is "+strTwo);
+        System.out.println("is the result same ? : "+ strOne.equals(strTwo));
     }
     public static String myTrim(String str){
         int start = 0;

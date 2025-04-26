@@ -5,10 +5,10 @@ class ShortestLongest {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a sentence:");
-        String s = scanner.nextLine();
+        String string = scanner.nextLine();
         
         // Split the sentence into words
-        String[] words = mySplit(s);
+        String[] words = mySplit(string);
         
         // Create a 2D array with words and their lengths
         String[][] wordLengths = getWordLengths(words);

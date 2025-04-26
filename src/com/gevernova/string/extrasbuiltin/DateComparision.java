@@ -5,20 +5,20 @@ class DateComparision{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter date 1 in (yyyy-mm-dd) format : ");
-        String d1 = scanner.nextLine();
+        String dateOne = scanner.nextLine();
         System.out.print("Enter date 2 in (yyyy-mm-dd) format : ");
-        String d2 = scanner.nextLine();
+        String dateTwo = scanner.nextLine();
 
-        LocalDate ld1 = LocalDate.parse(d1);
-        LocalDate ld2 = LocalDate.parse(d2);
+        LocalDate localDateOne = LocalDate.parse(dateOne);
+        LocalDate localDateTwo = LocalDate.parse(dateTwo);
 
-        if(ld1.isBefore(ld2)){
+        if(localDateOne.isBefore(localDateTwo)){
             System.out.println("The first date comes before");
         }
-        else if(ld1.isAfter(ld2)){
+        else if(localDateOne.isAfter(localDateTwo)){
             System.out.println("The first date comes after");
         }
-        else if(ld1.isEqual(ld2)){
+        else if(localDateOne.isEqual(localDateTwo)){
             System.out.println("Both dates are same");
         }
     }
