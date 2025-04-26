@@ -4,7 +4,7 @@ import java.util.*;
 
 class NumCheck {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Array to store 5 integers
         int num[] = new int[5];
@@ -12,7 +12,7 @@ class NumCheck {
         // Get 5 numbers from user
         for (int i = 0; i < 5; i++) {
             System.out.print("Enter number " + (i + 1) + ": ");
-            num[i] = sc.nextInt();
+            num[i] = scanner.nextInt();
         }
 
         // Analyze each number in the array

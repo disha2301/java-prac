@@ -2,34 +2,34 @@ package com.gevernova.array.leveltwo;
 import java.util.*;
 class Grade {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of students: ");
-        int n = sc.nextInt();
+        int num = scanner.nextInt();
 
-        int[] a = new int[n]; // Physics
-        int[] b = new int[n]; // Chemistry
-        int[] m = new int[n]; // Maths
-        double[] per = new double[n];
-        String[] grade = new String[n];
-        String[] remarks = new String[n];
+        int[] physics = new int[num]; // Physics
+        int[] chemistry = new int[num]; // Chemistry
+        int[] maths = new int[num]; // Maths
+        double[] per = new double[num];
+        String[] grade = new String[num];
+        String[] remarks = new String[num];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < num; i++) {
             System.out.println("Enter marks for Student " + (i + 1));
 
             System.out.print("Physics: ");
-            a[i] = sc.nextInt();
+            physics[i] = scanner.nextInt();
             System.out.print("Chemistry: ");
-            b[i] = sc.nextInt();
+            chemistry[i] = scanner.nextInt();
             System.out.print("Maths: ");
-            m[i] = sc.nextInt();
+            maths[i] = scanner.nextInt();
 
-            if (a[i] < 0 || b[i] < 0 || m[i] < 0) {
+            if (physics[i] < 0 || chemistry[i] < 0 || maths[i] < 0) {
                 System.out.println("Invalid marks entered! Marks cannot be negative. Please re-enter.");
                 i--; // Repeat for the same student
                 continue;
             }
 
-            per[i] = (a[i] + b[i] + m[i]) / 3.0;
+            per[i] = (physics[i] + chemistry[i] + maths[i]) / 3.0;
 
             if (per[i] >= 80) {
                 grade[i] = "A";
@@ -53,7 +53,7 @@ class Grade {
         }
 
         System.out.println("\n--- Results ---");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < num; i++) {
             System.out.println("Student " + (i + 1) + " - Percentage: " + per[i] + "%, Grade: " + grade[i] + ", Remarks: " + remarks[i]);
         }
     }

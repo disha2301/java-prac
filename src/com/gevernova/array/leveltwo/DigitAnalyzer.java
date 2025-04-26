@@ -2,9 +2,9 @@ package com.gevernova.array.leveltwo;
 import java.util.*;
 class DigitAnalyzer {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         int maxDigit = 10; // Maximum number of digits to store
         int[] digits = new int[maxDigit];

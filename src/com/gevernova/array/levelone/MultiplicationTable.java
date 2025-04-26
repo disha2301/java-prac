@@ -4,11 +4,11 @@ import java.util.*;
 
 public class MultiplicationTable {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Prompt the user to enter a number
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         // Create an array to store the multiplication results from 1 to 10
         int table[] = new int[10];

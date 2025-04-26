@@ -2,7 +2,7 @@ package com.gevernova.array.leveltwo;
 import java.util.*;
 public class Comparison {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String[] name = {"Amar", "Akbar", "Anthony"};
         int[] age = new int[3];
         double[] height = new double[3];
@@ -10,10 +10,10 @@ public class Comparison {
         // Input: Age and height for each friend
         for (int i = 0; i < 3; i++) {
             System.out.print("Enter age of " + name[i] + ": ");
-            age[i] = sc.nextInt();
+            age[i] = scanner.nextInt();
 
             System.out.print("Enter height of " + name[i] + " (in cm): ");
-            height[i] = sc.nextDouble();
+            height[i] = scanner.nextDouble();
         }
 
         int youngest = 0;

@@ -4,11 +4,11 @@ import java.util.*;
 
 class FizzBuzzPrinter {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Prompt user to enter a number
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         // Validate if the input is positive
         if (num <= 0) {

@@ -2,9 +2,9 @@ package com.gevernova.array.leveltwo;
 import java.util.*;
 class Frequency {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         int[] freq = new int[10]; // Array to store frequency of digits (0-9)
 

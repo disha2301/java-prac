@@ -2,10 +2,10 @@ import java.util.*;
 
 class MeanHeight {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Create an array to store heights of 11 players
-        double h[] = new double[11];
+        double height[] = new double[11];
 
         // Variable to store the sum of all heights
         double total = 0.0;
@@ -13,8 +13,8 @@ class MeanHeight {
         // Loop to get height input from user
         for (int i = 0; i < 11; i++) {
             System.out.print("Enter height of player " + (i + 1) + " in cm: ");
-            h[i] = sc.nextDouble(); // Store input in array
-            total += h[i];          // Add to total
+            height[i] = scanner.nextDouble(); // Store input in array
+            total += height[i];          // Add to total
         }
 
         // Calculate mean height

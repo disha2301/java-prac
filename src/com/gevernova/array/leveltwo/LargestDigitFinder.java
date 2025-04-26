@@ -2,9 +2,9 @@ package com.gevernova.array.leveltwo;
 import java.util.*;
 class LargestDigitFinder {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+        int num = scanner.nextInt();
 
         int size = 10;         // Initial size of the array
         int idx = 0;           // Current index in the array
@@ -13,7 +13,7 @@ class LargestDigitFinder {
         int[] d = new int[size]; // Array to store digits
 
         // Extract digits and store them in the array
-        while (n > 0) {
+        while (num > 0) {
             if (idx == size) {
                 // Increase array size by 10
                 size += 10;
@@ -23,8 +23,8 @@ class LargestDigitFinder {
                 }
                 d = temp; // Point d to the new larger array
             }
-            d[idx++] = n % 10;
-            n /= 10;
+            d[idx++] = num % 10;
+            num /= 10;
         }
 
         // Find the largest and second largest digits
@@ -39,6 +39,6 @@ class LargestDigitFinder {
 
         System.out.println("Largest: " + max);
         System.out.println("Second Largest: " + secondMax);
-        sc.close();
+        scanner.close();
     }
 }

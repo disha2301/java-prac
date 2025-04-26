@@ -4,7 +4,7 @@ import java.util.*;
 
 class ArrayInputSumm {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Create an array to store up to 10 double values
         double number[] = new double[10];
@@ -18,7 +18,7 @@ class ArrayInputSumm {
         // Loop to read user input until 0/negative number is entered or array is full
         while (true) {
             System.out.print("Enter a number (0 or negative to stop): ");
-            double num = sc.nextDouble();
+            double num = scanner.nextDouble();
 
             // Stop if number is 0 or negative, or array is full
             if (num <= 0 || i == 10) {

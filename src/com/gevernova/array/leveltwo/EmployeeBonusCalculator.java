@@ -2,7 +2,7 @@ package com.gevernova.array.leveltwo;
 import java.util.*;
 public class EmployeeBonusCalculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         double[] salaries = new double[10];
         double[] yearsOfService = new double[10];
         double[] bonuses = new double[10];
@@ -12,9 +12,9 @@ public class EmployeeBonusCalculator {
 
         for (int i = 0; i < 10; i++) {
             System.out.print("Enter salary for employee " + (i + 1) + ": ");
-            salaries[i] = sc.nextDouble();
+            salaries[i] = scanner.nextDouble();
             System.out.print("Enter years of service for employee " + (i + 1) + ": ");
-            yearsOfService[i] = sc.nextDouble();
+            yearsOfService[i] = scanner.nextDouble();
 
             if (salaries[i] < 0 || yearsOfService[i] < 0) {
                 System.out.println("Invalid input! Salary and years of service must be positive.");

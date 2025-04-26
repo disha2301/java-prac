@@ -3,11 +3,11 @@ import java.util.Scanner;
 // Class to calculate and display BMI details of multiple individuals
 public class BMISummary {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Ask the user for the number of people
         System.out.print("Enter the number of persons: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Arrays to store height, weight, BMI, and status
         double[] height = new double[n];
@@ -22,7 +22,7 @@ public class BMISummary {
             // Input and validate height (must be positive)
             do {
                 System.out.print("Height (in meters): ");
-                height[i] = sc.nextDouble();
+                height[i] = scanner.nextDouble();
                 if (height[i] <= 0) {
                     System.out.println("Height must be a positive number. Please try again.");
                 }
@@ -31,7 +31,7 @@ public class BMISummary {
             // Input and validate weight (must be positive)
             do {
                 System.out.print("Weight (in kilograms): ");
-                weight[i] = sc.nextDouble();
+                weight[i] = scanner.nextDouble();
                 if (weight[i] <= 0) {
                     System.out.println("Weight must be a positive number. Please try again.");
                 }

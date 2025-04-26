@@ -4,17 +4,17 @@ import java.util.*;
 
 class Reverse {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter any number: ");
-        int n = sc.nextInt();
+        int num = scanner.nextInt();
 
-        if (n == 0) {
+        if (num == 0) {
             System.out.println("Reversed digits: 0");
             return;
         }
 
-        int temp = n;
+        int temp = num;
         int count = 0;
 
         // Count number of digits
@@ -24,7 +24,7 @@ class Reverse {
         }
 
         int arr[] = new int[count];
-        temp = n;
+        temp = num;
 
         // Store digits in reverse order
         for (int i = 0; i < count; i++) {

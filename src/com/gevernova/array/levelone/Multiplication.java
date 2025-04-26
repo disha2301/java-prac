@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Multiplication{
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Ask user to enter a number
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         // Array to store multiplication results from 6 to 9 (4 values)
         int res[] = new int[4];
