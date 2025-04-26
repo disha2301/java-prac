@@ -4,18 +4,18 @@ import java.util.*;
 
 public class GroupEmployeesByDepartment {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         List<Employee> employees = new ArrayList<>();
 
         System.out.print("How many employees? ");
-        int n = sc.nextInt();
-        sc.nextLine(); // clear newline
+        int n = scanner.nextInt();
+        scanner.nextLine(); // clear newline
 
         for (int i = 0; i < n; i++) {
             System.out.print("Enter employee name: ");
-            String name = sc.nextLine();
+            String name = scanner.nextLine();
             System.out.print("Enter department: ");
-            String dept = sc.nextLine();
+            String dept = scanner.nextLine();
 
             employees.add(new Employee(name, dept));
         }

@@ -22,22 +22,22 @@ public class NthFromEnd{
         return slow.next(); // slow now points to Nth from end
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         List<String> list = new LinkedList<>();
 
         // input size
         System.out.print("Enter number of elements : ");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         // input elements
         System.out.println("Enter elements : ");
         for(int i = 0; i<= size; i++){
-            list.add(sc.nextLine());
+            list.add(scanner.nextLine());
         }
 
         // Input N
         System.out.print("Enter N (position from end): ");
-        int N = sc.nextInt();
+        int N = scanner.nextInt();
 
         // output
         String result = findNthFromEnd(list, N);

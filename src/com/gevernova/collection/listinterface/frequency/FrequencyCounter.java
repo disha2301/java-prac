@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class FrequencyCounter {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // taking user input
         System.out.println("Enter the sentence");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         str = str.toLowerCase();
         String[] words = str.split(" ");
         // declaration of map for key and value type

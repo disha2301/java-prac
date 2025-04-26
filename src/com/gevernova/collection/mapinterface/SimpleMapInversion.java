@@ -4,20 +4,20 @@ import java.util.*;
 
 public class SimpleMapInversion {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         Map<String, String> originalMap = new HashMap<>();
 
         System.out.print("How many entries? ");
-        int n = sc.nextInt();
-        sc.nextLine(); // clear newline
+        int n = scanner.nextInt();
+        scanner.nextLine(); // clear newline
 
         // Taking input for the original map
         for (int i = 0; i < n; i++) {
             System.out.print("Enter key: ");
-            String key = sc.nextLine();
+            String key = scanner.nextLine();
 
             System.out.print("Enter value: ");
-            String value = sc.nextLine();
+            String value = scanner.nextLine();
 
             originalMap.put(key, value);
         }

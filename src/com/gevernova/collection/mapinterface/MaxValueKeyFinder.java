@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 public class MaxValueKeyFinder {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         Map<String, Integer> map = new HashMap<>();
 
         System.out.print("How many entries? ");
-        int n = sc.nextInt();
-        sc.nextLine(); // consume newline
+        int n = scanner.nextInt();
+        scanner.nextLine(); // consume newline
 
         // Input key-value pairs
         for (int i = 0; i < n; i++) {
             System.out.print("Enter key: ");
-            String key = sc.nextLine();
+            String key = scanner.nextLine();
             System.out.print("Enter value: ");
-            int value = sc.nextInt();
-            sc.nextLine(); // consume newline
+            int value = scanner.nextInt();
+            scanner.nextLine(); // consume newline
             map.put(key, value);
         }
 

@@ -5,9 +5,9 @@ import java.util.*;
 public class RemoveDuplicates {
     public static void main(String[] args){
         // user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter space separated numbers");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         String[] token = str.split(" ");
         List<Integer> list = new ArrayList<>();
         for(String num : token ){

@@ -6,33 +6,33 @@ import java.util.Scanner;
 
 public class MergeMaps {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         Map<String, Integer> map1 = new HashMap<>();
         Map<String, Integer> map2 = new HashMap<>();
 
         System.out.print("How many entries in Map1? ");
-        int n1 = sc.nextInt();
-        sc.nextLine();
+        int n1 = scanner.nextInt();
+        scanner.nextLine();
 
         for (int i = 0; i < n1; i++) {
             System.out.print("Enter key for Map1: ");
-            String key = sc.nextLine();
+            String key = scanner.nextLine();
             System.out.print("Enter value: ");
-            int value = sc.nextInt();
-            sc.nextLine();
+            int value = scanner.nextInt();
+            scanner.nextLine();
             map1.put(key, value);
         }
 
         System.out.print("How many entries in Map2? ");
-        int n2 = sc.nextInt();
-        sc.nextLine();
+        int n2 = scanner.nextInt();
+        scanner.nextLine();
 
         for (int i = 0; i < n2; i++) {
             System.out.print("Enter key for Map2: ");
-            String key = sc.nextLine();
+            String key = scanner.nextLine();
             System.out.print("Enter value: ");
-            int value = sc.nextInt();
-            sc.nextLine();
+            int value = scanner.nextInt();
+            scanner.nextLine();
             map2.put(key, value);
         }
 

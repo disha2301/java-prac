@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class WordFrequencyCounter {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any sentence:");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
 
         // HashMap to store the word frequencies
         Map<String, Integer> wordCount = new HashMap<>();

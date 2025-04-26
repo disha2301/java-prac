@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class ListRotation {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter space separated numbers");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         String[] inputArray = str.split(" ");
         List<Integer> list = new ArrayList<>();
         for(String item : inputArray){
@@ -17,7 +17,7 @@ public class ListRotation {
 
         // input number of position to rotate
         System.out.println("Enter the number of positions to rotate ");
-        int pos = sc.nextInt();
+        int pos = scanner.nextInt();
 
         // perform rotation
         rotateList(list, pos);
