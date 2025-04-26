@@ -5,13 +5,13 @@ import java.util.Scanner;
 class CheckNumber {
 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int[] numbers = new int[5]; // Array to store 5 numbers
 
         // Taking input for 5 numbers
         for (int i = 0; i < numbers.length; i++) {
             System.out.print("Enter number " + (i + 1) + ": ");
-            numbers[i] = sc.nextInt();
+            numbers[i] = scanner.nextInt();
         }
 
         // Checking each number

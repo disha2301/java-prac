@@ -2,9 +2,9 @@ package com.gevernova.string.levelone;
 import java.util.*;
 class VowelConsonants{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String s = sc.nextLine();
+        String s = scanner.nextLine();
         int count[] = myCount(s);
         System.out.println("The given string has "+count[0]+" vowels");
         System.out.println("The given string has "+count[1]+" consonants");

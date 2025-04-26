@@ -5,11 +5,11 @@ import java.util.Scanner;
 class HandshakeCalc {
     public static void main(String[] args) {
         // Create scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get the number of students from the user
         System.out.print("Enter the number of students: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Calculate the maximum number of handshakes using the formula
         int h = (n * (n - 1)) / 2;

@@ -31,23 +31,23 @@ public class MatrixBinary {
 
     // main method
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of rows : ");
-        int rows = sc.nextInt();
+        int rows = scanner.nextInt();
         System.out.print("Enter number of columns : ");
-        int cols = sc.nextInt();
+        int cols = scanner.nextInt();
         int[][] m = new int[rows][cols];
 
         // input matrix values
         System.out.println("Enter matrix elements in sorted row-wise order");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                m[i][j] = sc.nextInt();
+                m[i][j] = scanner.nextInt();
             }
         }
         // input target value
         System.out.print("Enter the value to search : ");
-        int target = sc.nextInt();
+        int target = scanner.nextInt();
 
         // perform search
         boolean found = searchMatrix(m, target);

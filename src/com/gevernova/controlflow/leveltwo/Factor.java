@@ -3,10 +3,10 @@ import java.util.*;
 
 class Factor {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any number");
 
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Check if the input is a positive number
         if (n > 0) {

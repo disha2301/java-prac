@@ -4,15 +4,15 @@ import java.util.*;
 
 class BMICalculator {  
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get weight in kilograms
         System.out.print("Enter weight in kg: ");
-        double weight = sc.nextDouble();
+        double weight = scanner.nextDouble();
 
         // Get height in centimeters
         System.out.print("Enter height in cm: ");
-        double heightCm = sc.nextDouble();
+        double heightCm = scanner.nextDouble();
 
         // Convert height to meters
         double heightM = heightCm / 100;

@@ -24,12 +24,12 @@ public class SimpleDeck {
             deck[rand] = temp;
         }
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of players: ");
-        int players = sc.nextInt();
+        int players = scanner.nextInt();
 
         System.out.print("Enter cards per player: ");
-        int cards = sc.nextInt();
+        int cards = scanner.nextInt();
 
         if (players * cards > 52) {
             System.out.println("Not enough cards in the deck.");

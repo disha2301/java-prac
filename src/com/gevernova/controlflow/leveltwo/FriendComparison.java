@@ -3,22 +3,22 @@ import java.util.*;
 
 class FriendComparison {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Amar's age: ");
-        int a1 = sc.nextInt();
+        int a1 = scanner.nextInt();
         System.out.print("Enter Amar's height: ");
-        double h1 = sc.nextDouble();
+        double h1 = scanner.nextDouble();
 
         System.out.print("Enter Akbar's age: ");
-        int a2 = sc.nextInt();
+        int a2 = scanner.nextInt();
         System.out.print("Enter Akbar's height: ");
-        double h2 = sc.nextDouble();
+        double h2 = scanner.nextDouble();
 
         System.out.print("Enter Anthony's age: ");
-        int a3 = sc.nextInt();
+        int a3 = scanner.nextInt();
         System.out.print("Enter Anthony's height: ");
-        double h3 = sc.nextDouble();
+        double h3 = scanner.nextDouble();
 
         String youngest = "";
         String tallest = "";

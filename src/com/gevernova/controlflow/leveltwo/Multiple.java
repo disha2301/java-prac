@@ -2,9 +2,9 @@ package com.gevernova.controlflow.leveltwo;
 import java.util.*;
 class Multiple {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a positive number less than 100:");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
         if (number > 0 && number < 100) {
             for (int i = 100; i >= 1; i--) {
                 if (i % number == 0) {

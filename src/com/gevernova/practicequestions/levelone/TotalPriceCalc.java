@@ -5,15 +5,15 @@ import java.util.Scanner;
 class TotalPriceCalc {
     public static void main(String[] args) {
         // Scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get unit price from the user
         System.out.print("Enter the unit price (INR): ");
-        double unitPrice = sc.nextDouble();
+        double unitPrice = scanner.nextDouble();
 
         // Get quantity from the user
         System.out.print("Enter the quantity to be bought: ");
-        int quantity = sc.nextInt();
+        int quantity = scanner.nextInt();
 
         // Calculate total price
         double totalPrice = unitPrice * quantity;

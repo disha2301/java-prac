@@ -52,9 +52,9 @@ public class StringSplit {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
-        String input = sc.nextLine();
+        String input = scanner.nextLine();
 
         String[] builtIn = input.split(" ");
         String[] custom = customSplit(input);

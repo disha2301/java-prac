@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 class EmployeeBonusCalculator {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter salary: ");
-        double salary = sc.nextDouble();
+        double salary = scanner.nextDouble();
 
         System.out.print("Enter number of years served: ");
-        int years = sc.nextInt();
+        int years = scanner.nextInt();
 
         // Calculate and display bonus if applicable
         if (years > 5) {

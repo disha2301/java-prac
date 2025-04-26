@@ -10,13 +10,13 @@ public class ChocolateDivider {
         return result;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //taking user input
         System.out.print("Enter the number of chocolates: ");
-        int numberOfChocolates = sc.nextInt();
+        int numberOfChocolates = scanner.nextInt();
 
         System.out.print("Enter the number of children: ");
-        int numberOfChildren = sc.nextInt();
+        int numberOfChildren = scanner.nextInt();
         if (numberOfChildren == 0) {
             System.out.println("Cannot divide chocolates among 0 children!");
             return;

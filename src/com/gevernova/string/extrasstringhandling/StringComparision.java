@@ -3,13 +3,13 @@ import java.util.*;
 
 class StringComparision {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter first string:");
-        String str1 = sc.nextLine();
+        String str1 = scanner.nextLine();
 
         System.out.println("Enter second string:");
-        String str2 = sc.nextLine();
+        String str2 = scanner.nextLine();
 
         int len1 = str1.length();
         int len2 = str2.length();

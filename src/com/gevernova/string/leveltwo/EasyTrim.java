@@ -2,9 +2,9 @@ package com.gevernova.string.leveltwo;
 import java.util.Scanner;
 public class EasyTrim {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String text = sc.nextLine();
+        String text = scanner.nextLine();
 
         int start = 0;
         int end = text.length() - 1;

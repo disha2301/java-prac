@@ -4,11 +4,11 @@ import java.util.Scanner;
 class HandShakes {
     public static void main(String args[]) {
         // Creating Scanner object to take input from user
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Asking user to input the number of students
         System.out.println("Enter number of students");
-        int n = sc.nextInt();  // Storing the user input in variable 'n'
+        int n = scanner.nextInt();  // Storing the user input in variable 'n'
 
         // Calling the method to calculate maximum handshakes
         int maxHand = handshakeCalc(n);

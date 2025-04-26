@@ -3,9 +3,9 @@ import java.util.*;
 
 public class FizzBuzz {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any number");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Check for valid positive input
         if (n <= 0) {

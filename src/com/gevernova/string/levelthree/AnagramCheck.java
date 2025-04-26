@@ -21,9 +21,9 @@ public class AnagramCheck {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str1 = sc.nextLine().replaceAll("\\s+", "").toLowerCase();
-        String str2 = sc.nextLine().replaceAll("\\s+", "").toLowerCase();
+        Scanner scanner = new Scanner(System.in);
+        String str1 = scanner.nextLine().replaceAll("\\s+", "").toLowerCase();
+        String str2 = scanner.nextLine().replaceAll("\\s+", "").toLowerCase();
         System.out.println(isAnagram(str1, str2));
     }
 }

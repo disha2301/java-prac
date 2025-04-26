@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 public class BubbleStudentMarksSorter {
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // Input number of students
         System.out.println("Enter number of students");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         int marks[] = new int[n];
 
         // Input marks
         System.out.println("Enter marks");
         for(int i=0;i<n;i++){
-            marks[i] = sc.nextInt();
+            marks[i] = scanner.nextInt();
         }
 
         // Bubble sort implementation

@@ -4,16 +4,16 @@ import java.util.*;
 
 class SwitchCalculator {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter first number: ");
-        double first = sc.nextDouble();
+        double first = scanner.nextDouble();
 
         System.out.print("Enter second number: ");
-        double second = sc.nextDouble();
+        double second = scanner.nextDouble();
 
         System.out.print("Enter operator (+, -, *, /): ");
-        String op = sc.next();
+        String op = scanner.next();
 
         double result;
 

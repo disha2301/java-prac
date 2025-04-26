@@ -16,13 +16,13 @@ public class StudentVoteChecker {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int[] studentAges = new int[10]; // Array to store ages of 10 students
 
         // Taking input for 10 students
         for (int i = 0; i < studentAges.length; i++) {
             System.out.print("Enter age of student " + (i + 1) + ": ");
-            studentAges[i] = sc.nextInt();
+            studentAges[i] = scanner.nextInt();
 
             boolean canVote = canStudentVote(studentAges[i]);
 

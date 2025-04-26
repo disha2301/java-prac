@@ -2,11 +2,11 @@ package com.gevernova.string.generalquestions;
 import java.util.Scanner;
 class GcdLcm{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first number");
-        int num1 = sc.nextInt();
+        int num1 = scanner.nextInt();
         System.out.println("Enter second number");
-        int num2 = sc.nextInt();
+        int num2 = scanner.nextInt();
         int gcd = gcdCalc(num1,num2);
         int lcm = lcmCalc(num1,num2,gcd);
         System.out.println("GCD is "+gcd);

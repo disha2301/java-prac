@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class SimpleRPS {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int userWins = 0, computerWins = 0;
 
         System.out.print("How many rounds do you want to play? ");
-        int rounds = sc.nextInt();
-        sc.nextLine(); // clear newline
+        int rounds = scanner.nextInt();
+        scanner.nextLine(); // clear newline
 
         for (int i = 1; i <= rounds; i++) {
             System.out.print("Round " + i + " - Enter rock, paper, or scissors: ");
-            String userChoice = sc.nextLine().toLowerCase();
+            String userChoice = scanner.nextLine().toLowerCase();
 
             String[] options = {"rock", "paper", "scissors"};
             String compChoice = options[(int)(Math.random() * 3)];

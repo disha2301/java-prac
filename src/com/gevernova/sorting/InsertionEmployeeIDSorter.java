@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 public class InsertionEmployeeIDSorter {
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // Taking user input for the number of employees
         System.out.print("Enter number of employees : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         int id[] = new int[n];
 
         // Taking user input for the employee IDs
         System.out.print("Enter employee IDs");
         for(int i = 0; i<n; i++){
-            id[i] = sc.nextInt();
+            id[i] = scanner.nextInt();
         }
 
         // Insertion sort implementation

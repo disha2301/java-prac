@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 class NaturalNumberSumWithForLoop {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input from user
         System.out.print("Enter value of n: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         if (n <= 0) {
             System.out.println(n + " is not a natural number");

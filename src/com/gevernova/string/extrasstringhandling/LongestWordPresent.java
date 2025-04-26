@@ -2,9 +2,9 @@ package com.gevernova.string.extrasstringhandling;
 import java.util.*;
 class LongestWordPresent {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a sentence:");
-        String str = sc.nextLine() + " "; // extra space to process last word
+        String str = scanner.nextLine() + " "; // extra space to process last word
 
         String word = "", longest = "";
         

@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class SimpleCharFreq {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a word: ");
-        String input = sc.nextLine();
+        String input = scanner.nextLine();
 
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);

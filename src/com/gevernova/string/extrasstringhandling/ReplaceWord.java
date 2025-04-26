@@ -3,13 +3,13 @@ package com.gevernova.string.extrasstringhandling;
 import java.util.*;
 class ReplaceWord{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter any sentence : ");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         System.out.print("Enter word to be replaced : ");
-        String oldWord = sc.nextLine();
+        String oldWord = scanner.nextLine();
         System.out.print("Enter new word to be replaced with : ");
-        String newWord = sc.nextLine();
+        String newWord = scanner.nextLine();
         String result = replaceWord(str, oldWord, newWord);
         System.out.println("Modified Sentence: " + result);
     }

@@ -2,9 +2,9 @@ package com.gevernova.string.levelone;
 import java.util.*;
 class Split{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any sentence");
-        String s = sc.nextLine();
+        String s = scanner.nextLine();
         String s1[]=mySplit(s);
         String s2[]=s.split(" ");
         boolean compare = isSame(s1,s2);

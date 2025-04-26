@@ -2,11 +2,11 @@ package com.gevernova.controlflow.levelone;
 import java.util.Scanner;
 class VoteCheck {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Ask user to enter their age
         System.out.println("Enter age:");
-        int age = sc.nextInt();
+        int age = scanner.nextInt();
 
         // Check if the person is eligible to vote
         if (age >= 18) {

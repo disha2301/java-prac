@@ -2,9 +2,9 @@ package com.gevernova.string.levelone;
 import java.util.*;
 class Length{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String s = sc.next();
+        String s = scanner.next();
         int len1 = lengthCalc(s);
         int len2 = s.length();
         System.out.print("Lenght calculated without inbuilt method : "+len1+"\n");

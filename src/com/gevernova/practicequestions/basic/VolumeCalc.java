@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 class VolumeCalc {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input radius of the cylinder
         System.out.println("Enter radius: ");
-        double r = sc.nextDouble();
+        double r = scanner.nextDouble();
 
         // Input height of the cylinder
         System.out.println("Enter height: ");
-        double h = sc.nextDouble();
+        double h = scanner.nextDouble();
 
         // Calculate volume of the cylinder
         double volume = Math.PI * r * r * h;

@@ -2,10 +2,10 @@ package com.gevernova.string.levelone;
 import java.util.*;
 class VowelConsonantsCheck {
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String s = sc.nextLine();
-        String ans[][]=myCheck(s);
+        String string = scanner.nextLine();
+        String ans[][]=myCheck(string);
         display(ans);
     }
     //function to check if the character is Vowel, Consonant or letter

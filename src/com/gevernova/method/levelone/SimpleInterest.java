@@ -11,19 +11,19 @@ class SimpleInterest {
 
     public static void main(String args[]) {
         // Create a Scanner object for reading user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Prompt user to enter Principal amount
         System.out.print("Enter Principal: ");
-        double principal = sc.nextDouble(); // Store input in 'principal'
+        double principal = scanner.nextDouble(); // Store input in 'principal'
 
         // Prompt user to enter Rate of Interest
         System.out.print("Enter Rate of Interest: ");
-        double rate = sc.nextDouble(); // Store input in 'rate'
+        double rate = scanner.nextDouble(); // Store input in 'rate'
 
         // Prompt user to enter Time in years
         System.out.print("Enter Time (in years): ");
-        double time = sc.nextDouble(); // Store input in 'time'
+        double time = scanner.nextDouble(); // Store input in 'time'
 
         // Call the interestCalc method and store the result
         double interest = interestCalc(principal, rate, time);

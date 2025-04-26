@@ -4,10 +4,10 @@ import java.util.*;
 
 class HarshadNumber { 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();  // Input number from user
+        int num = scanner.nextInt();  // Input number from user
 
         int temp = num;          // Store original number for final check
         int sum = 0;             // Sum of digits

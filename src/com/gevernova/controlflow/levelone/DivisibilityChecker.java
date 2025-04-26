@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 class DivisibilityChecker {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Check and display divisibility by 5
         if (n % 5 == 0)

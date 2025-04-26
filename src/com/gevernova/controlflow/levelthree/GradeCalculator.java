@@ -2,15 +2,15 @@ package com.gevernova.controlflow.levelthree;
 import java.util.*;
 class GradeCalculator {  
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Taking input marks for 3 subjects
         System.out.print("Enter marks for Physics: ");
-        int m1 = sc.nextInt();
+        int m1 = scanner.nextInt();
         System.out.print("Enter marks for Chemistry: ");
-        int m2 = sc.nextInt();
+        int m2 = scanner.nextInt();
         System.out.print("Enter marks for Maths: ");
-        int m3 = sc.nextInt();
+        int m3 = scanner.nextInt();
 
         // Validate marks (must be between 0 and 100)
         if (m1 < 0 || m1 > 100 || m2 < 0 || m2 > 100 || m3 < 0 || m3 > 100) {

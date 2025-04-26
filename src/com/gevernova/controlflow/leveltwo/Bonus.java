@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 class Bonus {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get employee's salary as input
         System.out.print("Enter employee's salary: ");
-        double salary = sc.nextDouble();
+        double salary = scanner.nextDouble();
         
         // Get years of service as input
         System.out.print("Enter years of service: ");
-        int yrs = sc.nextInt();
+        int yrs = scanner.nextInt();
 
         // Check if years of service is more than 5 to award bonus
         if (yrs > 5) {

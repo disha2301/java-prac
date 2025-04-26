@@ -23,16 +23,16 @@ public class SelectionSortExamScores {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // take the user input
         System.out.print("Enter number of students : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         int[] score = new int[n];
 
         // Input exam score
         System.out.println("Enter exam scores");
         for(int i = 0; i < n; i++){
-            score[i] = sc.nextInt();
+            score[i] = scanner.nextInt();
         }
         // sort the scores using selection sort
         selectionSort(score);

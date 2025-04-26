@@ -3,9 +3,9 @@ import java.util.*;
 
 class ShortestLongest {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a sentence:");
-        String s = sc.nextLine();
+        String s = scanner.nextLine();
         
         // Split the sentence into words
         String[] words = mySplit(s);

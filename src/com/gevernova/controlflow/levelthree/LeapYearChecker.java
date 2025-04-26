@@ -4,9 +4,9 @@ import java.util.*;
 
 class LeapYearChecker { 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a year after 1582: ");
-        int yr = sc.nextInt();
+        int yr = scanner.nextInt();
 
         // Part 1 – Using multiple if-else statements
         if (yr < 1582) {

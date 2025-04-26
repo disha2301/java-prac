@@ -5,11 +5,11 @@ import java.util.Scanner;
 class KmToMile {
     public static void main(String[] args) {
         // Create scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get the distance in kilometers from the user
         System.out.print("Enter distance in kilometers: ");
-        double km = sc.nextDouble();
+        double km = scanner.nextDouble();
 
         // Convert kilometers to miles
         double m = km / 1.6;

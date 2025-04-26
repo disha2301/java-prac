@@ -2,13 +2,13 @@ package com.gevernova.string.leveltwo;
 import java.util.Scanner;
 public class VoteCheck {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int[] ages = new int[10];
 
         System.out.println("Enter age for 10 students:");
         for (int i = 0; i < 10; i++) {
             System.out.print("Student " + (i + 1) + ": ");
-            ages[i] = sc.nextInt();
+            ages[i] = scanner.nextInt();
         }
 
         System.out.println("\nResult:");

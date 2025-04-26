@@ -37,9 +37,9 @@ public class WordMinMax {
         return result;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
-        String sentence = sc.nextLine();
+        String sentence = scanner.nextLine();
         String[] words = splitWords(sentence);
         String shortest = words[0];
         String longest = words[0];

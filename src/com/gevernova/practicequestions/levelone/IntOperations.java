@@ -5,15 +5,15 @@ import java.util.Scanner;
 class IntOperations {
     public static void main(String[] args) {
         // Create scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get values for a, b, and c from the user
         System.out.print("Enter value for a: ");
-        int a = sc.nextInt();
+        int a = scanner.nextInt();
         System.out.print("Enter value for b: ");
-        int b = sc.nextInt();
+        int b = scanner.nextInt();
         System.out.print("Enter value for c: ");
-        int c = sc.nextInt();
+        int c = scanner.nextInt();
 
         // Perform the operations
         int res1 = a + b * c; 

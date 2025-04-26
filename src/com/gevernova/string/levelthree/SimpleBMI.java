@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 public class SimpleBMI {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Loop for 3 people
         for (int i = 1; i <= 3; i++) {
             System.out.println("Person " + i + ":");
             System.out.print("Enter weight in kg: ");
-            double weight = sc.nextDouble();
+            double weight = scanner.nextDouble();
             System.out.print("Enter height in cm: ");
-            double heightCm = sc.nextDouble();
+            double heightCm = scanner.nextDouble();
             double heightM = heightCm / 100;
             double bmi = weight / (heightM * heightM);
             System.out.printf("BMI: %.2f\n", bmi);

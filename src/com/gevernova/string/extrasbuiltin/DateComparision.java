@@ -3,11 +3,11 @@ import java.time.LocalDate;
 import java.util.Scanner;
 class DateComparision{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter date 1 in (yyyy-mm-dd) format : ");
-        String d1 = sc.nextLine();
+        String d1 = scanner.nextLine();
         System.out.print("Enter date 2 in (yyyy-mm-dd) format : ");
-        String d2 = sc.nextLine();
+        String d2 = scanner.nextLine();
 
         LocalDate ld1 = LocalDate.parse(d1);
         LocalDate ld2 = LocalDate.parse(d2);

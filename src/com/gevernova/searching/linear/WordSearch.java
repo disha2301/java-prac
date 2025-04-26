@@ -17,18 +17,18 @@ public class WordSearch {
 
     // main method
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter no. of sentences : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         String[] sentences = new String[n];
         // Input all sentences
         System.out.println("Enter the sentences:");
         for (int i = 0; i < n; i++) {
-            sentences[i] = sc.nextLine();
+            sentences[i] = scanner.nextLine();
         }
         // Input the word to search
         System.out.print("Enter the word to search for: ");
-        String word = sc.nextLine();
+        String word = scanner.nextLine();
         // Search and print result
         String result = findSentenceWithWord(sentences, word);
         System.out.println("Result: " + result);

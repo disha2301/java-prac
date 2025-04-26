@@ -2,11 +2,11 @@ package com.gevernova.string.levelone;
 import java.util.*;
 class WordLength{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a sentence");
-        String s = sc.nextLine();
+        String string = scanner.nextLine();
 
-        String[] words = mySplit(s);
+        String[] words = mySplit(string);
         String[][] wordLengths = getWordLengths(words);
 
         for (int i = 0; i < wordLengths.length; i++) {

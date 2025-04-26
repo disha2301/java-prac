@@ -24,13 +24,13 @@ public class RotationPoint {
     }
     // main method
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         int[] arr = new int[n];
         System.out.println("Enter the rotated sorted array");
         for(int i = 0; i < n; i++){
-            arr[i] = sc.nextInt();
+            arr[i] = scanner.nextInt();
         }
         // find the rotation point
         int index = bubbleRotationFind(arr);

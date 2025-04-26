@@ -3,9 +3,9 @@ import java.util.*;
 
 class LeapYearOrNot { 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a year after 1582: ");
-        int yr = sc.nextInt();
+        int yr = scanner.nextInt();
 
         if (yr < 1582) {
             System.out.println("Invalid input! Year must be 1582 or later.");

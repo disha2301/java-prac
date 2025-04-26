@@ -5,11 +5,11 @@ import java.util.Scanner;
 class Square{
     public static void main(String[] args) {
         // Create a Scanner object to take input from the user
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get the perimeter of the square from the user
         System.out.print("Enter the perimeter of the square: ");
-        double peri = sc.nextDouble();
+        double peri = scanner.nextDouble();
 
         // Calculate the length of one side of the square
         double s = peri / 4;

@@ -2,14 +2,14 @@ package com.gevernova.string.levelone;
 import java.util.*;
 class AgeToVote{
         public static void main(String args[]) {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the number of students:");
-            int n = sc.nextInt();
+            int n = scanner.nextInt();
             
             int[] ages = new int[n];
             for (int i = 0; i < n; i++) {
                 System.out.println("Enter age of student " + (i + 1) + ":");
-                ages[i] = sc.nextInt();
+                ages[i] = scanner.nextInt();
             }
             
             String[][] votingStatus = checkVoting(ages);

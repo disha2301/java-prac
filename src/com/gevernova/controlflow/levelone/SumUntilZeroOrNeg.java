@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 class SumUntilZeroOrNeg {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         double total = 0.0;
 
         while (true) {
             System.out.print("Enter a value (0 or negative to stop): ");
-            double number = sc.nextDouble();
+            double number = scanner.nextDouble();
 
             if (number <= 0) {
                 break;

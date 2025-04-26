@@ -3,11 +3,11 @@ import java.util.*;
 
 class AbundantNumber {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Prompt user to enter a number
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         int sum = 0; // Variable to store the sum of proper divisors
 

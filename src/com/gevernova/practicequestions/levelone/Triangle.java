@@ -5,15 +5,15 @@ import java.util.Scanner;
 class Triangle {
     public static void main(String[] args) {
         // Scanner object to take input from user
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get the base of the triangle from the user
         System.out.print("Enter the base of the triangle (in cm): ");
-        double base = sc.nextDouble();
+        double base = scanner.nextDouble();
 
         // Get the height of the triangle from the user
         System.out.print("Enter the height of the triangle (in cm): ");
-        double height = sc.nextDouble();
+        double height = scanner.nextDouble();
 
         // Conversion factor from cm² to in² (1 cm² = 0.1550 in²)
         double cmToInches = 0.1550;

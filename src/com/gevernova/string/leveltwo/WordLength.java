@@ -50,15 +50,15 @@ public class WordLength {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
-        String sentence = sc.nextLine();
+        String sentence = scanner.nextLine();
         String[] words = splitWords(sentence);
         String[][] table = getWordLengthTable(words);
         for (int i = 0; i < table.length; i++) {
             System.out.println(table[i][0] + "\t" + Integer.parseInt(table[i][1]));
         }
 
-        sc.close();
+        scanner.close();
     }
 }

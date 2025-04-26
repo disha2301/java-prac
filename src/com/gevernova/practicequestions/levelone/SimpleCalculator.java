@@ -5,13 +5,13 @@ import java.util.Scanner;
 class SimpleCalculator {
     public static void main(String[] args) {
         // Create scanner object to read input from user
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Take two numbers as input from the user
         System.out.print("Enter first number: ");
-        double number1 = sc.nextDouble();
+        double number1 = scanner.nextDouble();
         System.out.print("Enter second number: ");
-        double number2 = sc.nextDouble();
+        double number2 = scanner.nextDouble();
 
         // Perform the calculations
         double add = number1 + number2;

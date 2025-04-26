@@ -3,9 +3,9 @@ import java.util.*;
 
 class Palindrome {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter any string: ");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
 
         boolean pal = true;
 

@@ -61,17 +61,17 @@ public class MergeBookPriceSorter {
     }
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // take user input for number of book prices
         System.out.print("Enter number of books : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         int[] price = new int[n];
 
         // input prices from user
         System.out.println("Enter the prices of the books : ");
         for(int i = 0;i < n;i++){
-            price[i] = sc.nextInt();
+            price[i] = scanner.nextInt();
         }
 
         // call mergesort function

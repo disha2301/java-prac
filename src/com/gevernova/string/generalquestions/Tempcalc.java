@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 class Tempcalc {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
         System.out.println("1. Celsius to Fahrenheit");
         System.out.println("2. Fahrenheit to Celsius");
         System.out.print("Enter choice (1 or 2): ");
-        int ch = sc.nextInt();
+        int ch = scanner.nextInt();
 
         System.out.print("Enter temperature: ");
-        double temp = sc.nextDouble();
+        double temp = scanner.nextDouble();
 
         if (ch == 1) {
             double f = (temp * 9 / 5) + 32;

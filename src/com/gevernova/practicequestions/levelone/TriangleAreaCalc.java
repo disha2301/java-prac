@@ -5,15 +5,15 @@ import java.util.Scanner;
 class TriangleAreaCalc {
     public static void main(String[] args) {
         // Scanner object for taking user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get the base of the triangle from the user
         System.out.print("Enter the base of the triangle (in cm): ");
-        double base = sc.nextDouble();
+        double base = scanner.nextDouble();
 
         // Get the height of the triangle from the user
         System.out.print("Enter the height of the triangle (in cm): ");
-        double height = sc.nextDouble();
+        double height = scanner.nextDouble();
 
         // Calculate the area in square cm
         double areaCm = 0.5 * base * height;

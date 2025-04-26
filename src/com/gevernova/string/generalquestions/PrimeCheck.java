@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 class PrimeCheck{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any number");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         if(isPrime(n))
         System.out.println("Prime number");
         else

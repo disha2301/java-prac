@@ -5,14 +5,14 @@ import java.util.Scanner;
 class FeeCalc {
     public static void main(String[] args) {
         // Create scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Get the student fee and discount percentage from the user
         System.out.print("Enter the student fee (INR): ");
-        double fee = sc.nextDouble();
+        double fee = scanner.nextDouble();
 
         System.out.print("Enter the discount percentage: ");
-        double disPer = sc.nextDouble();
+        double disPer = scanner.nextDouble();
 
         // Calculate the discount amount
         double disAmt = (fee * disPer) / 100;

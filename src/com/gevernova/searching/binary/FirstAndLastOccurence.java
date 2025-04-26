@@ -42,18 +42,18 @@ public class FirstAndLastOccurence {
     }
     // main method
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of elements : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         int[] arr = new int[n];
 
         System.out.println("Enter sorted elements: ");
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            arr[i] = scanner.nextInt();
         }
 
         System.out.print("Enter target to find: ");
-        int target = sc.nextInt();
+        int target = scanner.nextInt();
 
         int first = firstOccurence(arr, target);
         int last = lastOccurence(arr, target);

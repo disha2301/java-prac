@@ -2,9 +2,9 @@ package com.gevernova.string.generalquestions;
 import java.util.Scanner;
 class Factorial{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any number");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         long fact = factorial(n);
         System.out.println("Factorial of "+n+" is "+fact);
     }

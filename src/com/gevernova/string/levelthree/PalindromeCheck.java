@@ -36,9 +36,9 @@ public class PalindromeCheck {
         return true;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter text to check for Palindrome: ");
-        String input = sc.nextLine().replaceAll("\\s+", "").toLowerCase();
+        String input = scanner.nextLine().replaceAll("\\s+", "").toLowerCase();
         System.out.println("Using Logic 1 (start-end comparison): " + isPalindrome1(input));
         System.out.println("Using Logic 2 (recursion): " + isPalindrome2(input, 0, input.length() - 1));
         System.out.println("Using Logic 3 (char arrays): " + isPalindrome3(input));

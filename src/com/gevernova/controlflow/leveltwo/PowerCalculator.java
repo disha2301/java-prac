@@ -2,12 +2,12 @@ package com.gevernova.controlflow.leveltwo;
 import java.util.*;
 class PowerCalculator {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number:");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
 
         System.out.println("Enter power:");
-        int pow = sc.nextInt();
+        int pow = scanner.nextInt();
 
         if (pow < 0) {
             System.out.println("Please enter a positive number as power.");

@@ -2,11 +2,11 @@ package com.gevernova.controlflow.levelthree;
 import java.util.*;
 class ArmstrongNumber {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Prompt user to enter a number
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         int sum = 0;            // To store the sum of cubes of digits
         int temp = number;      // Copy of the original number to work on

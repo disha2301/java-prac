@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class SimpleReportCard {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Physics marks: ");
-        int physics = sc.nextInt();
+        int physics = scanner.nextInt();
 
         System.out.print("Enter Chemistry marks: ");
-        int chemistry = sc.nextInt();
+        int chemistry = scanner.nextInt();
 
         System.out.print("Enter Math marks: ");
-        int math = sc.nextInt();
+        int math = scanner.nextInt();
 
         int total = physics + chemistry + math;
         double percentage = total / 3.0;

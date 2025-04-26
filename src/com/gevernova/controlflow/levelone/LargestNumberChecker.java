@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 class LargestNumberChecker {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Taking input for three numbers
         System.out.print("Enter first number: ");
-        int a = sc.nextInt();
+        int a = scanner.nextInt();
 
         System.out.print("Enter second number: ");
-        int b = sc.nextInt();
+        int b = scanner.nextInt();
 
         System.out.print("Enter third number: ");
-        int c = sc.nextInt();
+        int c = scanner.nextInt();
 
         // Checking which number is the largest
         System.out.println("Is the first number the largest? " + (a > b && a > c ? "Yes" : "No"));

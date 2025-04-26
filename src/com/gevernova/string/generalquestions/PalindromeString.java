@@ -2,9 +2,9 @@ package com.gevernova.string.generalquestions;
 import java.util.Scanner;
 class PalindromeString{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String s = sc.nextLine();
+        String s = scanner.nextLine();
         boolean isPalin = isPalindrome(s);
         if(isPalin) System.out.println("YES");
         else System.out.println("NO");

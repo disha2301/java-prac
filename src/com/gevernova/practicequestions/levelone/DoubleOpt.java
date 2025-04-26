@@ -5,15 +5,15 @@ import java.util.Scanner;
 class DoubleOpt {
     public static void main(String[] args) {
         // Create scanner object for input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input values for a, b, and c
         System.out.print("Enter value for a: ");
-        double a = sc.nextDouble();
+        double a = scanner.nextDouble();
         System.out.print("Enter value for b: ");
-        double b = sc.nextDouble();
+        double b = scanner.nextDouble();
         System.out.print("Enter value for c: ");
-        double c = sc.nextDouble();
+        double c = scanner.nextDouble();
 
         // Perform operations with proper operator precedence
         double res1 = a + b * c;  // Result for a + (b * c)

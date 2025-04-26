@@ -2,9 +2,9 @@ package com.gevernova.string.generalquestions;
 import java.util.*;
 class Fibonacci {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of terms: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         printFibonacci(n);
     }
     static void printFibonacci(int n) {

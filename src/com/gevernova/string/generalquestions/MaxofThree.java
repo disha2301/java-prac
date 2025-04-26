@@ -2,13 +2,13 @@ package com.gevernova.string.generalquestions;
 import java.util.*;
 class MaxofThree{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter value of number 1 : ");
-        int a = sc.nextInt();
+        int a = scanner.nextInt();
         System.out.println("Enter value of number 2 : ");
-        int b = sc.nextInt();
+        int b = scanner.nextInt();
         System.out.println("Enter value of number 3 : ");
-        int c = sc.nextInt();
+        int c = scanner.nextInt();
         int max = a;
         if(b > max) max = b;
         if(c > max) max = c;

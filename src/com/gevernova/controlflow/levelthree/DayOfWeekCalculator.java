@@ -4,17 +4,17 @@ import java.util.*;
 
 class DayOfWeekCalculator {  
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Take month, day, and year as input
         System.out.print("Enter month (1-12): ");
-        int m = sc.nextInt();
+        int m = scanner.nextInt();
 
         System.out.print("Enter day (1-31): ");
-        int d = sc.nextInt();
+        int d = scanner.nextInt();
 
         System.out.print("Enter year: ");
-        int yr = sc.nextInt();
+        int yr = scanner.nextInt();
 
         // Adjust month and year for Zeller’s Congruence
         if (m < 3) {

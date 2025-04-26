@@ -2,9 +2,9 @@ package com.gevernova.string.levelone;
 import java.util.*;
 public class TrimCheck {
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         String str1 = myTrim(str);
         String str2 = str.trim();
         System.out.println("Trimmed without built-in function is "+str1);

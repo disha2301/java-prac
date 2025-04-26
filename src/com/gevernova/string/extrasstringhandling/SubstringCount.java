@@ -2,11 +2,11 @@ package com.gevernova.string.extrasstringhandling;
 import java.util.*;
 class SubstringCount{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         System.out.println("Enter any substring");
-        String sub = sc.nextLine();
+        String sub = scanner.nextLine();
         int count = 0;
         for(int i = 0; i <= str.length() - sub.length(); i++){
             if(str.substring(i, i+sub.length()).equals(sub)){

@@ -39,15 +39,15 @@ public class QuickProductPriceSort {
 
     // main method to test the sorting
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter number of products : ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         int[] price = new int[n];
 
         System.out.println("Enter the prices : ");
         for(int i = 0; i < n; i++){
-            price[i] = sc.nextInt();
+            price[i] = scanner.nextInt();
         }
 
         // calling quick sort method

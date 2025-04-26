@@ -9,11 +9,11 @@ public class leapYearChecker {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Prompt user to enter the year
         System.out.print("Enter a year (>= 1582): ");
-        int year = sc.nextInt();
+        int year = scanner.nextInt();
 
         // Validate year
         if (year < 1582) {
