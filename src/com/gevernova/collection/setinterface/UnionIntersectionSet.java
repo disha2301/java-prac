@@ -7,7 +7,7 @@ import java.util.Set;
 public class UnionIntersectionSet {
     public static void main(String[] args) {
         // Scanner to take user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Create two sets of integers using HashSet
         Set<Integer> s1 = new HashSet<>();
@@ -15,18 +15,18 @@ public class UnionIntersectionSet {
 
         // Input the size of the first set and add elements to it
         System.out.print("Enter size of set 1: ");
-        int size1 = sc.nextInt();
+        int size1 = scanner.nextInt();
         System.out.println("Enter elements in set 1:");
         for (int i = 0; i < size1; i++) {
-            s1.add(sc.nextInt()); // add each element to set 1
+            s1.add(scanner.nextInt()); // add each element to set 1
         }
 
         // Input the size of the second set and add elements to it
         System.out.print("Enter size of set 2: ");
-        int size2 = sc.nextInt();
+        int size2 = scanner.nextInt();
         System.out.println("Enter elements in set 2:");
         for (int i = 0; i < size2; i++) {
-            s2.add(sc.nextInt()); // add each element to set 2
+            s2.add(scanner.nextInt()); // add each element to set 2
         }
 
         // Compute the union of the two sets

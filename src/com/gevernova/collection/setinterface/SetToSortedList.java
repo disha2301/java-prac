@@ -5,19 +5,19 @@ import java.util.*;
 public class SetToSortedList {
     public static void main(String[] args){
         // Create a scanner object to take user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Create a HashSet to store unique integers
         Set<Integer> set = new HashSet<>();
 
         // Ask the user to input the size of the set
         System.out.print("Enter size of the set: ");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         // Prompt the user to input elements for the set
         System.out.println("Enter the elements in the set:");
         for(int i = 0; i < size; i++){
-            set.add(sc.nextInt()); // Add each element to the set (duplicates are automatically ignored)
+            set.add(scanner.nextInt()); // Add each element to the set (duplicates are automatically ignored)
         }
 
         // Convert the HashSet to an ArrayList (as HashSet doesn't maintain order)
