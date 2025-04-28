@@ -1,13 +1,14 @@
 package com.gevernova.generics.warehousemanagementsystem;
 // concrete subclass
 class Electronics extends WarehouseItem{
-
+    private String brand;
     // constructor
-    public Electronics(String name){
-        super(name);
+    public Electronics(String name, double price, String brand){
+        super(name, price);
+        this.brand = brand;
     }
-    // to get type of item
-    public String getType(){
-        return "Electronics";
+    @Override
+    public void displayDetails(){
+        System.out.println("Electronics Item: " + getName() + ", Price: " + getPrice() + ", Brand: " + brand);
     }
 }

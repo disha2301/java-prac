@@ -1,21 +1,21 @@
 package com.gevernova.generics.warehousemanagementsystem;
 
 // abstract base class
-abstract class WarehouseItem {
+abstract class WarehouseItem{
     private String name;
+    private double price;
 
     // constructor
-    public WarehouseItem(String name) {
+    public WarehouseItem(String name, double price){
         this.name = name;
+        this.price = price;
     }
-    // use of getter method
+    // getter
     public String getName(){
         return name;
     }
-    public abstract String getType();
-
-    @Override
-    public String toString(){
-        return getType()+" : "+name;
+    public double getPrice(){
+        return price;
     }
+    public abstract void displayDetails();
 }

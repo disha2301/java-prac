@@ -2,14 +2,15 @@ package com.gevernova.generics.warehousemanagementsystem;
 
 // concrete subclass
 class Furniture extends WarehouseItem {
+    private String material;
 
-    // constructor
-    public Furniture(String name){
-        super(name);
+    public Furniture(String name, double price, String material) {
+        super(name, price);
+        this.material = material;
     }
 
-    // get the item type
-    public String getType(){
-        return "Furniture";
+    @Override
+    public void displayDetails() {
+        System.out.println("Furniture Item: " + getName() + ", Price: " + getPrice() + ", Material: " + material);
     }
 }
