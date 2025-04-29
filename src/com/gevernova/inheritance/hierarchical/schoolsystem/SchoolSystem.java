@@ -1,18 +1,18 @@
 package com.gevernova.inheritance.hierarchical.schoolsystem;
 
-// main class
+// Main class to demonstrate the hierarchical inheritance
 public class SchoolSystem {
     public static void main(String[] args) {
-        Teacher t = new Teacher("Mr. Sharma", 45, "Mathematics");
-        Student s = new Student("Ananya", 16, "10th Grade");
-        Staff st = new Staff("Ramesh", 35, "Administration");
+        Teacher mathTeacher = new Teacher("Mr. Sharma", 45, "Mathematics");
+        Student highSchoolStudent = new Student("Ananya", 16, "10th Grade");
+        Staff adminStaff = new Staff("Ramesh", 35, "Administration");
 
-        t.displayRole();
+        mathTeacher.displayRole();
         System.out.println();
 
-        s.displayRole();
+        highSchoolStudent.displayRole();
         System.out.println();
 
-        st.displayRole();
+        adminStaff.displayRole();
     }
 }
