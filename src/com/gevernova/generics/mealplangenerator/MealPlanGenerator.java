@@ -1,5 +1,5 @@
 package com.gevernova.generics.mealplangenerator;
-// // Step 4: Testing the Meal Plan Generator
+// Step 4: Testing the Meal Plan Generator
 public class MealPlanGenerator {
     public static void main(String[] args){
         // create different meal plan objects
