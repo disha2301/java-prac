@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/JUnit/pom.xml" />
         <option value="$PROJECT_DIR$/JUnitGE/pom.xml" />
+        <option value="$PROJECT_DIR$/JSON/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
