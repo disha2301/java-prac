@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JUnitGE" />
         <module name="JSON" />
+        <module name="CSV" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
